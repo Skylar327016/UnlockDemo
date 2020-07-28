@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,7 +30,9 @@
                                                     <constraint firstAttribute="height" constant="75" id="fSS-2g-buy"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                <state key="normal" title="1"/>
+                                                <state key="normal" title="義">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="keyIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aXN-lT-6bH"/>
                                                 </connections>
@@ -42,7 +45,9 @@
                                                     <constraint firstAttribute="height" constant="75" id="Kau-Hy-GbJ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                <state key="normal" title="2"/>
+                                                <state key="normal" title="字">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="keyIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="imP-WF-h6d"/>
                                                 </connections>
@@ -55,7 +60,9 @@
                                                     <constraint firstAttribute="height" constant="75" id="iaz-BB-tGm"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                <state key="normal" title="3"/>
+                                                <state key="normal" title="碰">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="keyIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bz5-yH-ELL"/>
                                                 </connections>
@@ -73,7 +80,9 @@
                                                     <constraint firstAttribute="height" constant="75" id="oO5-lY-OJX"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                <state key="normal" title="4"/>
+                                                <state key="normal" title="氣">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="keyIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VWW-qq-87v"/>
                                                 </connections>
@@ -86,7 +95,9 @@
                                                     <constraint firstAttribute="width" constant="75" id="yTL-lr-eR6"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                <state key="normal" title="5"/>
+                                                <state key="normal" title="個">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="keyIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NWw-RF-vlH"/>
                                                 </connections>
@@ -99,7 +110,9 @@
                                                     <constraint firstAttribute="width" constant="75" id="hs3-mu-ZsB"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                <state key="normal" title="6"/>
+                                                <state key="normal" title="糊">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="keyIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aIP-ih-eOz"/>
                                                 </connections>
@@ -117,7 +130,9 @@
                                                     <constraint firstAttribute="width" constant="75" id="o6j-ih-3Ki"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                <state key="normal" title="7"/>
+                                                <state key="normal" title="湖">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="keyIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F6i-YA-xHe"/>
                                                 </connections>
@@ -130,7 +145,9 @@
                                                     <constraint firstAttribute="height" constant="75" id="iKd-5T-JLB"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                <state key="normal" title="8"/>
+                                                <state key="normal" title="意">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="keyIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oe1-G6-GSd"/>
                                                 </connections>
@@ -143,7 +160,9 @@
                                                     <constraint firstAttribute="height" constant="75" id="yUU-1M-nmG"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                <state key="normal" title="9"/>
+                                                <state key="normal" title="一">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="keyIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ogi-rv-VEZ"/>
                                                 </connections>
@@ -160,7 +179,9 @@
                                     <constraint firstAttribute="width" constant="75" id="aWl-cC-Fsz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <state key="normal" title="0"/>
+                                <state key="normal" title="義">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="keyIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kqb-Cj-1pQ"/>
                                 </connections>
@@ -174,7 +195,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="xsY-nt-Skk">
-                                <rect key="frame" x="55.5" y="291" width="303" height="69"/>
+                                <rect key="frame" x="55.5" y="291" width="303" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JeX-mT-kxG">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -184,8 +205,9 @@
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7uY-Dc-Mwj">
-                                        <rect key="frame" x="81" y="0.0" width="60" height="69"/>
+                                        <rect key="frame" x="81" y="0.0" width="60" height="60"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="YTV-hm-KqP"/>
                                             <constraint firstAttribute="width" constant="60" id="o8Q-no-HG5"/>
                                         </constraints>
                                     </imageView>
@@ -232,14 +254,47 @@
                         <outlet property="fourthWord" destination="N5q-cU-hBB" id="Zht-Nr-ipn"/>
                         <outlet property="secondWord" destination="7uY-Dc-Mwj" id="787-nM-N68"/>
                         <outlet property="thirdWord" destination="0Nc-xJ-gjB" id="cxx-ZX-Kwt"/>
+                        <outlet property="words" destination="xsY-nt-Skk" id="SwX-BJ-e8Y"/>
+                        <segue destination="kk3-b6-OJ9" kind="show" identifier="go" id="AnB-2u-1RU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="62.946428571428569"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="q5f-hW-CZB">
+            <objects>
+                <viewController id="kk3-b6-OJ9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uqq-KQ-Yk7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="V2E-oQ-Qxk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Oa-q5-kiF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Oa-q5-kiF" firstAttribute="bottom" secondItem="V2E-oQ-Qxk" secondAttribute="bottom" id="DbJ-x0-C6h"/>
+                            <constraint firstItem="V2E-oQ-Qxk" firstAttribute="top" secondItem="9Oa-q5-kiF" secondAttribute="top" id="YIb-R5-9GQ"/>
+                            <constraint firstItem="9Oa-q5-kiF" firstAttribute="trailing" secondItem="V2E-oQ-Qxk" secondAttribute="trailing" id="d6j-gY-drD"/>
+                            <constraint firstItem="V2E-oQ-Qxk" firstAttribute="leading" secondItem="9Oa-q5-kiF" secondAttribute="leading" id="dyL-zj-OxY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tYD-N0-m3e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5VF-8P-BZA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808" y="74"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Image" width="600" height="393"/>
         <image name="江湖" width="450" height="263"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondWord: UIImageView!
     @IBOutlet weak var thirdWord: UIImageView!
     @IBOutlet weak var fourthWord: UIImageView!
+    @IBOutlet weak var words: UIStackView!
+    let buttons = [UIButton]()
+    var imageViews = [UIImageView]()
     var keyCount = 0
     let password = "9527"
     var input = ""
@@ -46,9 +49,11 @@ class ViewController: UIViewController {
                 let inputNumber = sender.tag
                 input += "\(inputNumber)"
                 if input != password{
+                    animationForFailure()
                     restart()
                 }else{
                     fourthWord.image = word4
+                    actionForSuccess()
                 }
                 
             }
@@ -67,6 +72,17 @@ class ViewController: UIViewController {
         input = ""
     }
     
+    func animationForFailure(){
+        
+        UIViewPropertyAnimator(duration: 1, dampingRatio: 0.1, animations: {
+            self.words.center.x += 30
+        }).startAnimation()
+        
+    }
+    func actionForSuccess(){
+        self.performSegue(withIdentifier: "go", sender: self)
+
+    }
     
 }
 
