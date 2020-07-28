@@ -8,16 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //4個要放選擇的文字的圖片
     @IBOutlet weak var firstWord: UIImageView!
     @IBOutlet weak var secondWord: UIImageView!
     @IBOutlet weak var thirdWord: UIImageView!
     @IBOutlet weak var fourthWord: UIImageView!
+    //要操作動畫的StackView
     @IBOutlet weak var words: UIStackView!
-    let buttons = [UIButton]()
+    //放各個按鈕文字的UIImage陣列，索引值對照他們的tag，我寫成setWordsImage方法在viewDidLoad時把圖做好放進去預備
     var images = [UIImage]()
+    //判斷使用者輸入第幾個數字，第四個數字時要判斷是否密碼正確
     var keyCount = 0
+    //預設密碼9527不解釋
     let password = "9527"
+    //用來儲存使用者輸入的文字的tag值串連的結果
     var input = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +77,7 @@ class ViewController: UIViewController {
 
     }
     func setWordsImage(){
+        //因為我確定都有圖，所以後面都用!強制unwrapped
         images.append(UIImage(named: "義")!)
         images.append(UIImage(named: "義")!)
         images.append(UIImage(named: "字")!)
