@@ -15,47 +15,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var fourthWord: UIImageView!
     @IBOutlet weak var words: UIStackView!
     let buttons = [UIButton]()
-    var imageViews = [UIImageView]()
+    var images = [UIImage]()
     var keyCount = 0
     let password = "9527"
     var input = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        setWordsImage()
         
     }
     @IBAction func keyIn(_ sender: UIButton) {
         keyCount += 1
         if keyCount == 1{
-            if let word1 = UIImage(named: "一"){
-                firstWord.image = word1
-                let inputNumber = sender.tag
-                input += "\(inputNumber)"
-                
-            }
+            firstWord.image = images[sender.tag]
+            input += "\(sender.tag)"
         }else if keyCount == 2{
-            if let word2 = UIImage(named: "個"){
-                secondWord.image = word2
-                let inputNumber = sender.tag
-                input += "\(inputNumber)"
-            }
+            secondWord.image = images[sender.tag]
+            input += "\(sender.tag)"
         }else if keyCount == 3{
-            if let word3 = UIImage(named: "字"){
-                thirdWord.image = word3
-                let inputNumber = sender.tag
-                input += "\(inputNumber)"
-            }
+            thirdWord.image = images[sender.tag]
+            input += "\(sender.tag)"
         }else{
-            if let word4 = UIImage(named: "湖"){
-                let inputNumber = sender.tag
-                input += "\(inputNumber)"
-                if input != password{
-                    animationForFailure()
-                    restart()
-                }else{
-                    fourthWord.image = word4
-                    actionForSuccess()
-                }
-                
+            fourthWord.image = images[sender.tag]
+            input += "\(sender.tag)"
+            if input != password{
+                animationForFailure()
+            }else{
+                actionForSuccess()
             }
         }
     }
@@ -73,16 +59,31 @@ class ViewController: UIViewController {
     }
     
     func animationForFailure(){
-        
-        UIViewPropertyAnimator(duration: 1, dampingRatio: 0.1, animations: {
+        let animation = UIViewPropertyAnimator(duration: 0.8, dampingRatio: 0.1, animations: {
             self.words.center.x += 30
-        }).startAnimation()
+        })
+        animation.addCompletion({_ in
+            self.restart()
+        })
+        animation.startAnimation()
         
     }
     func actionForSuccess(){
         self.performSegue(withIdentifier: "go", sender: self)
 
     }
-    
+    func setWordsImage(){
+        images.append(UIImage(named: "義")!)
+        images.append(UIImage(named: "義")!)
+        images.append(UIImage(named: "字")!)
+        images.append(UIImage(named: "碰")!)
+        images.append(UIImage(named: "氣")!)
+        images.append(UIImage(named: "個")!)
+        images.append(UIImage(named: "糊")!)
+        images.append(UIImage(named: "湖")!)
+        images.append(UIImage(named: "意")!)
+        images.append(UIImage(named: "一")!)
+ 
+    }
 }
 
